@@ -1,0 +1,27 @@
+.item1 {grid-area: header;}
+.item2 {grid-area: menu;}
+.item3 {grid-area: texto;}
+.item4 {grid-area: video1;}
+.item5 {grid-area: video2;}
+.item6 {grid-area: video3;}
+.item7 {grid-area: video4;}
+
+.grid-container{
+display: grid;
+grid-template-areas: 
+    'header header header header header header'
+    'menu menu texto texto video1 video2'
+    'menu menu texto texto video3 video4';
+    grid-template-columns: auto auto auto auto auto auto; 
+    grid: gap 10px;
+    background-color: #dfdfdf;
+    padding: 10px;
+    
+}
+.grid-container > div{
+    background-color: rgba (255, 255, 255, 0.8);
+    text-align: center;    
+    padding: 20px 0px;
+    font-size: 30px;
+    
+}
